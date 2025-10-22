@@ -1,0 +1,69 @@
+{
+  "name": "eslint-plugin-dom-security",
+  "version": "1.0.0",
+  "description": "ESLint plugin with rules for detecting DOM XSS and client-side security issues",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./runtime": {
+      "import": "./dist/runtime.js",
+      "require": "./dist/runtime.cjs",
+      "types": "./dist/runtime.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "prepublishOnly": "pnpm run build && pnpm run test"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "security",
+    "validation",
+    "dom",
+    "xss",
+    "redirect",
+    "typescript"
+  ],
+  "author": "jolle",
+  "license": "MIT",
+  "peerDependencies": {
+    "@typescript-eslint/parser": ">=8.0.0",
+    "eslint": ">=9.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^8.46.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "@typescript-eslint/rule-tester": "^8.46.2",
+    "@vitest/ui": "^2.1.9",
+    "eslint": "^9.38.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
