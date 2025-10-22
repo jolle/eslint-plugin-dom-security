@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "jolle",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-dom-security": "file:.."
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.46.2",
+    "typescript": "^5.9.3"
+  }
+}
