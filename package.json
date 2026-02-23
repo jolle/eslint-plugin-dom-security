@@ -58,7 +58,7 @@
     "@typescript-eslint/parser": "^8.46.2",
     "@typescript-eslint/rule-tester": "^8.46.2",
     "@vitest/ui": "^2.1.9",
-    "eslint": "^9.38.0",
+    "eslint": "^10.0.1",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3",
     "vitest": "^2.1.9"
